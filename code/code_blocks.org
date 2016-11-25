@@ -1,0 +1,50 @@
+*Part I
+** Forecaster blocks
+#+BEGIN_SRC scratch
+when flag clicked
+say (join[Here's the weather in ](join([town v]sensor value)(join[]([country v] sensor value)
+#+END_SRC
+
+** Arrow blocks
+#+BEGIN_SRC scratch
+when flag clicked
+set size to [50] %
+point in direction [0 v]
+turn cw (([wind_speed v] sensor value) * [10]) degrees
+change size by(([wind_speed v] sensor value) * [10])
+#+END_SRC
+
+** Thermometer blocks
+#+BEGIN_SRC scratch
+when flag clicked
+clear
+show
+stamp
+hide
+#+END_SRC
+
+** Pixel blocks
+#+BEGIN_SRC scratch
+when flag clicked
+forever
+broadcast [new-station v]
+wait [10] secs
+#+END_SRC
+
+#+BEGIN_SRC scratch
+when flag clicked
+clear
+hide
+set pen size to [5]
+wait [1] secs
+set pen color to [#ff0000]
+go to front
+if <([ambient v] sensor value) >[0]>
+go to x: [-207] y:[-140]
+go to x: [-207] y:[-60]
+change y by (([ambient_temp v] sensor value) * [1.7])
+else
+go to x: [-207] y:[-140]
+go to x: [-207] y:[-110]
+change y by ([30]+(([ambient_temp v] sensor value) * [1.7]))
+#+END_SRC
