@@ -1,4 +1,3 @@
-import pyowm
 import scratch
 from requests import get
 import json
@@ -12,32 +11,37 @@ def listen():
         except scratch.ScratchError:
             raise StopIteration
 
+
+def getplace(lat, lon):
+    url = "http://maps.googleapis.com/maps/api/geocode/json?"
+    url += "latlng=%s,%s&sensor=false" % (lat, lon)
+    j=get(url).json()
+    components = j['results'][0]['address_components']
+    country = town = None
+    for c in components:
+        if "country" in c['types']:
+            country = c['long_name']
+        if "postal_town" in c['types']:
+            town = c['long_name']
+    return town, country
+
 for msg in listen():
-    if 'key' in msg['sensor-update']:
-        key = msg['sensor-update']['key']
-        owm = pyowm.OWM(key)
-    if 'location' in msg['sensor-update']:
-        location = msg['sensor-update']['location']
-        observation = owm.weather_at_place(location)
-        w = observation.get_weather()
-        temperature = w.get_temperature()['temp']
-        rain = w.get_rain()
-        if '1h' in rain:
-            rainfall = rain['1h']
-        else:
-            rainfall = 0
-        wind = w.get_wind()
-        if 'speed'in wind:
-            wind_speed = wind['speed']
-        else:
-            wind_speed = 0
-        if 'deg' in wind:
-            wind_direction = wind['deg']
-        else:
-            wind_direction = 0
-        clouds = w.get_clouds()
-        s.sensorupdate({'temperature': temperature - 273})
-        s.sensorupdate({'rainfall': rainfall})
-        s.sensorupdate({'wind_speed': wind_speed})
-        s.sensorupdate({'wind_direction': wind_direction})
-        s.sensorupdate({'clouds': clouds})
+    if 'id' in msg['sensor-update']:
+        id = msg['sensor-update']['id']
+        url = 'https://apex.oracle.com/pls/apex/raspberrypi/weatherstation/getlatestwsdata/' + id
+        weather = get(url).json()['items'][0]
+        town, country = getplace(weather['weather_stn_lat'],weather['weather_stn_long'])
+        s.sensorupdate({'air_pressure':weather['air_pressure']})
+        s.sensorupdate({'wind_gust_speed':weather['wind_gust_speed']})
+        s.sensorupdate({'wind_direction':weather['wind_direction']})
+        s.sensorupdate({'reading_timestamp':weather['reading_timestamp']})
+        s.sensorupdate({'wind_speed':weather['wind_speed']})
+        s.sensorupdate({'air_quality':weather['air_quality']})
+        s.sensorupdate({'ground_temp':weather['ground_temp']})
+        s.sensorupdate({'humidity':weather['humidity']})
+        s.sensorupdate({'weather_stn_lat':weather['weather_stn_lat']})
+        s.sensorupdate({'weather_stn_long':weather['weather_stn_long']})
+        s.sensorupdate({'ambient_temp':weather['ambient_temp']})
+        s.sensorupdate({'rainfall':weather['rainfall']})
+        s.sensorupdate({'town':town.replace(' ','-')})
+        s.sensorupdate({'country':country.replace(' ','-')})

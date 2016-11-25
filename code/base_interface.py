@@ -1,0 +1,13 @@
+import socket
+
+HOST = 'localhost'
+PORT = 42001
+
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.connect((HOST, PORT))
+
+def sendCMD(cmd):
+    s.send(len(cmd).to_bytes(4, 'big'))
+    s.send(bytes(cmd,'UTF-8'))
+
+sendCMD('broadcast "hello"')
