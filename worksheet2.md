@@ -1,47 +1,39 @@
-# Resource Name
+# The Scratch Weather Dashboard
 
-Short description of the resource
+In this next worksheet you will learn how to display some weather data visually; producing a *Weather Dashboard*
 
-## The First Step
+## Choosing a forecaster
 
-First we'll do X.
+The first thing you'll want to do is to choose a weather forecaster, who will be telling the viewers what the weather is like. Weather forecasters are often call *meteorologist*.
 
-1. First do A
+1. Choose a new sprite, by clicking on the middle button as shown below. 
 
-1. Then do B
+![](images/new-sprite.png)
 
-1. Now do C in code:
+1. Choose any sprite you like. Here we've gone for the `square-girl` image.
 
-    ```python
-    print("Hello world")
-    ```
+![](images/square-girl.png)
 
-    In Python the `print` function is something
+## Your forecaster script
 
-1. Now do D
+1. You can start off, by making your weather forecaster set the `id` of the weather station you will be using.
 
-1. Now do X
+![](images/set-id.png)
 
-Now we have X
+1. She'll then need to say a little bit about where the weather forecast is for. Use a `join` block within a `say` block to begin with, just like you did in [worksheet one](worksheet.md)
 
-## The Next Step
+![](images/forecaster-1.png)
 
-Now we've done X, we'll do Y.
+1. Now grab two more `join` blocks. In the **righthand side** of one, you can place the `town` the weather forecast is coming from. Into the **lefthand side** of the other you can place the `country` that the weather forecast is coming from.
 
-1. First do A
+![](images/forecaster-2.png)
 
-1. Then do B
+1. Now the two `join` blocks can be placed together. It may not be obvious in the image, but you want to add a single *space* character between the two `sensor value`s
 
-1. Now do C in code:
+![](images/forecaster-3.png)
 
-    ```python
-    print("Hello world")
-    ```
+1. With that done, you can place all three `join` blocks together into the `say` block
 
-    In Python the `print` function is something
+![](images/forecaster-final.png)
 
-1. Now do D
-
-1. Now do Y
-
-Now we have X and Y
+##
