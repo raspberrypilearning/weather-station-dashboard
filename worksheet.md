@@ -10,10 +10,10 @@ For Scratch to be able to talk to weather stations around the world, it needs a 
 
 1. Into the terminal type the following command to get the Python file.
 
-```bash
- wget -O interface.py https://raw.githubusercontent.com/raspberrypilearning/scratching-the-weather/master/code/interface.py?token=AETp8m9CBcAxVOOTmuLO7X9K7cXqPRcrks5YQZB_wA%3D%3D
-```
-- not get shortened URL off BEN
+	```bash
+	 wget -O interface.py https://raw.githubusercontent.com/raspberrypilearning/scratching-the-weather/master/code/interface.py?token=AETp8m9CBcAxVOOTmuLO7X9K7cXqPRcrks5YQZB_wA%3D%3D
+	```
+- note get shortened URL off BEN
 
 1. That's it, you have downloaded the file. Keep the terminal open though, as you'll need it in a minuter
 
@@ -23,44 +23,44 @@ Now we need to help Scratch talk to the file you have downloaded.
 
 1. Open up Scratch by clicing on `Menu` > `Programming` > `Scratch`
 
-1. Now click on the 
+1. Once Scratch opens, you need to enable `remote sensors`. Click on the `sensing` button to reveal the `sensing blocks`
 
-1. Now do C in code:
+	![](images/sensing.png)
 
-    ```python
-    print("Hello world")
-    ```
+1. Now find the clock called `slider sensor value` and right click on it. Click on `enable remote sensor connections`
 
-    In Python the `print` function is something
+![](images/enable.png)
 
-1. Now do D:
+## Starting your Python script
 
-    ![](images/gpio-setup.png)
+1. Now that Scratch can talk to Python, you need to start the Python script so that it can fetch lots of weathwer station data and send it to Scratch.
 
-    Wire up the button to pin 17 and ground
+1. Go back to the terminal, and type the following:
 
-1. Now do X
+```bash
+python3 interface.py
+```
 
-Now we have X
+## Getting data from a Weather Station
 
-## The Next Step
+1. If you have your own weather station at your school, ask your teacher for the weather station's `id`. If you don't then you can use the `id` in the code below.
 
-Now we've done X, we'll do Y.
+1. The first step is simple. You can make the Scratch cat tell you the weather for any particular weather station you like. First grab a `when green flag clicked` 
 
-1. First do A
+	![](images/cat-1.png)
 
-1. Then do B
+1. Then click on `Variables` and then `Make a variable`. Call it `id`.
 
-1. Now do C in code:
+	![](images/variable.png)
 
-    ```python
-    print("Hello world")
-    ```
+1. Once you have created the variable, you can set it to your weather stations id or use `490722`
 
-    In Python the `print` function is something
+	![](images(cat-2.png)
 
-1. Now do D
+1. Now if you go back to the `Sensing` menu in Scratch, and find the the `slider sensor value` block, you should see there is a little black arrow that points downwards, next to the word `slider`. Click this menu and you can change the sensor value to lots of different things.
 
-1. Now do Y
+	![](images/menu.png)
 
-Now we have X and Y
+1. To start off with, you can choose `air_pressure`, and then use a `say` block so that the cat will tell you the air pressure at the weather station.
+
+	![](images/cat-final.png)
