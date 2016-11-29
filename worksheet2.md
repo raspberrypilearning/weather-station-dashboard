@@ -4,7 +4,7 @@ In this next worksheet you will learn how to display some weather data visually;
 
 ## Choosing a forecaster
 
-The first thing you'll want to do is to choose a weather forecaster, who will be telling the viewers what the weather is like. Weather forecasters are often call *meteorologist*.
+The first thing you'll want to do is to choose a weather forecaster, who will be telling the viewers what the weather is like. Weather forecasters are often call *meteorologists*.
 
 1. Choose a new sprite, by clicking on the middle button as shown below. 
 
@@ -40,7 +40,7 @@ The first thing you'll want to do is to choose a weather forecaster, who will be
 
 ## A Weather vane
 
-1. Next you can make a weather vane. Weather vane's show the direction of the wind, but yours is also going to visualise the speed of the wind.
+1. Next you can make a weather vane. Weather vanes show the direction of the wind, but yours is also going to visualise the speed of the wind.
 
 1. Click on the New sprite button to choose another sprite.
 
@@ -116,9 +116,12 @@ The first thing you'll want to do is to choose a weather forecaster, who will be
 
 	![](images/pixel-6.png)
 
-1. Then the `y` needs to be changed.
+1. Then the pen needs to again move in the `y` direction. This can be achieved using a little bit of maths.
 
 	![](images/pixel-7.png)
+	
+1. And can then be placed into the finished script.
+
 	![](images/pixel-8.png)
 
 ## What Next?
