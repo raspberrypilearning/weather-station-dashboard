@@ -24,7 +24,7 @@ The first thing you'll want to do is to choose a weather forecaster, who will be
 
 	![](images/forecaster-1.png)
 
-1. Now grab two more `join` blocks. In the **righthand side** of one, you can place the `town` the weather forecast is coming from. Into the **lefthand side** of the other you can place the `country` that the weather forecast is coming from.
+1. Now grab two more `join` blocks. In the **right-hand side** of one, you can place the `town` the weather forecast is coming from. Into the **left-hand side** of the other you can place the `country` that the weather forecast is coming from.
 
 	![](images/forecaster-2.png)
 
@@ -38,9 +38,9 @@ The first thing you'll want to do is to choose a weather forecaster, who will be
 
 1. Your forecaster is now finished. Next you can add some graphical elements to help users visualise the weather.
 
-## A Weathervane
+## A Weather vane
 
-1. Next you can make a weathervane. Weathervane's show the direction of the wind, but yours is also going to visualise the speed of the wind.
+1. Next you can make a weather vane. Weather vane's show the direction of the wind, but yours is also going to visualise the speed of the wind.
 
 1. Click on the New sprite button to choose another sprite.
 
@@ -58,13 +58,13 @@ The first thing you'll want to do is to choose a weather forecaster, who will be
 
 	![](images/arrow-2.png)
 
-1. To visualise the wind speed, you can change the size of the arrow. Finde the `change size by __` block and add this to your script.
+1. To visualise the wind speed, you can change the size of the arrow. Find the `change size by __` block and add this to your script.
 
 	![](images/arrow-3.png)
 
-1. To finish off, find the `__ * __` block in `Operators` and use it to multiply the `wind_speed` by `10`. You can choose a differenet number if you like though.
+1. To finish off, find the `__ * __` block in `Operators` and use it to multiply the `wind_speed` by `10`. You can choose a different number if you like though.
 
-![](images/arrow-4.png)
+	![](images/arrow-4.png)
 
 1. This can then be added into the `change size by __` block.
 
@@ -74,9 +74,9 @@ The first thing you'll want to do is to choose a weather forecaster, who will be
 
 1. Next you are going to produce a working thermometer. You'll need a graphic to represent it, and the one below should be good enough. You can get a large version of it [here](images/therm-sprite.png)
 
-![](images/therm-sprite-small.png)
+	![](images/therm-sprite-small.png)
 
-1. Import this sprite into your Scratch program. You'll need to place this sprite in a very particular place, so it's best to add this into the script. You're also going to use the pen tool to draw the mercury inside the thermometer, but becuase you can't draw over the top of Sprites, you need to stamp the Sprite's image to the canvas first, and then hide it. This is the only script you'll need on the thermometer.
+1. Import this sprite into your Scratch program. You'll need to place this sprite in a very particular place, so it's best to add this into the script. You're also going to use the pen tool to draw the mercury inside the thermometer, but because you can't draw over the top of Sprites, you need to stamp the Sprite's image to the canvas first, and then hide it. This is the only script you'll need on the thermometer.
 
 	![](images/thermometer.png)
 
@@ -86,15 +86,15 @@ The first thing you'll want to do is to choose a weather forecaster, who will be
 
 1. Now you're going to need a new and very tiny sprite. Click on the left-most button in the `New Sprite` menu.
 
-![](images/new-sprite.png)
+	![](images/new-sprite.png)
 
 1. All you need is a single white dot in the middle of the screen.
 
-![](images/canvas.png)
+	![](images/canvas.png)
 
 1. Now you're going to get this tiny pixel to draw a red line of mercury inside the thermometer. When the pixel receives a message to draw, it needs to set up it's pen.
 
-![](images/pixel-1.png)
+	![](images/pixel-1.png)
 
 1. How the mercury is drawn will depend on whether the temperature is higher or lower than `0`. You write the code for temperatures above `0` first.
 
@@ -102,22 +102,24 @@ The first thing you'll want to do is to choose a weather forecaster, who will be
 	
 1. The first thing to do is to make the pen go all the way to the bottom of the thermometer, and for the pen to be place `down` on the canvas.
 
-![](images/pixel-3.png)
+	![](images/pixel-3.png)
 
-1. Next the pen can move up to the `0` degrees mark on the thermemeter.
+1. Next the pen can move up to the `0` degrees mark on the thermometer.
 
 	![](images/pixel-4.png)
 	
 1. Then depending on the temperature, the pen can move upwards in the `y` axis. You might want to tweak the values a little, but 1.7 pixels per degree seems to work fairly well.
 
-![](images/pixel-5.png)
+	![](images/pixel-5.png)
 
 1. If the temperature is blow zero, the pen needs to move to the `-30` degree mark.
 
-![](images/pixel-6.png)
+	![](images/pixel-6.png)
 
 1. Then the `y` needs to be changed.
 
-![](images/pixel-7.png)
-![](images/pixel-8.png)
+	![](images/pixel-7.png)
+	![](images/pixel-8.png)
 
+## What Next?
+In [worksheet three](worksheet3.md) you'll learn how to fetch the weather from more than one weather station, giving you a global weather dashboard.
