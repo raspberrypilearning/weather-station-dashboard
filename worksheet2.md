@@ -10,7 +10,7 @@ The first thing you'll want to do is to choose a weather forecaster, who will be
 
 	![](images/new-sprite.png)
 
-1. Choose any sprite you like. Here we've gone for the `square-girl` image.
+1. Choose any sprite you like. Here we've gone for the `squaregirl` image.
 
 ![](images/square-girl.png)
 
@@ -28,7 +28,7 @@ The first thing you'll want to do is to choose a weather forecaster, who will be
 
 	![](images/forecaster-2.png)
 
-1. Now the two `join` blocks can be placed together. It may not be obvious in the image, but you want to add a single *space* character between the two `sensor value`s
+1. Now the two `join` blocks can be placed together. It may not be obvious in the image, but you want to add a single *space* character between the two `sensor values`
 
 	![](images/forecaster-3.png)
 
@@ -48,6 +48,8 @@ The first thing you'll want to do is to choose a weather forecaster, who will be
 
 1. In `things` you should see a `Clock-hand` which is basically just an arrow. Import this sprite and delete any scripts that come with it.
 
+![](images/clock.png)
+
 1. When you weather forecast begins, you'll need to set the size and direction that the arrow points.
 
 	![](images/arrow-1.png)
@@ -60,7 +62,7 @@ The first thing you'll want to do is to choose a weather forecaster, who will be
 
 	![](images/arrow-3.png)
 
-1. To finish off, find the `__ * __` block in `Operators` and use it to multiply the `wind_speed` by `10`.
+1. To finish off, find the `__ * __` block in `Operators` and use it to multiply the `wind_speed` by `10`. You can choose a differenet number if you like though.
 
 ![](images/arrow-4.png)
 
@@ -70,9 +72,9 @@ The first thing you'll want to do is to choose a weather forecaster, who will be
 
 ## Adding a Thermometer
 
-1. Next you are going to produce a working thermometer. You'll need a graphic to represent it, and the one below should be good enough. Right click on it and download the file to your Raspberry Pi.
+1. Next you are going to produce a working thermometer. You'll need a graphic to represent it, and the one below should be good enough. You can get a large version of it [here](images/therm-sprite.png)
 
-	![](images/therm-sprite.png)
+![](images/therm-sprite-small.png)
 
 1. Import this sprite into your Scratch program. You'll need to place this sprite in a very particular place, so it's best to add this into the script. You're also going to use the pen tool to draw the mercury inside the thermometer, but becuase you can't draw over the top of Sprites, you need to stamp the Sprite's image to the canvas first, and then hide it. This is the only script you'll need on the thermometer.
 
@@ -118,3 +120,4 @@ The first thing you'll want to do is to choose a weather forecaster, who will be
 
 ![](images/pixel-7.png)
 ![](images/pixel-8.png)
+
