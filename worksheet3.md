@@ -7,7 +7,7 @@ In this relatively short worksheet, you'll learn how to access random weather st
 1. Make sure your Python script is still running in the background.
 1. The script is constantly listening out for a `broadcast` with the name `new-station`. Each time the script here's the `new-station broadcast` it chooses a new and random station to collect the data from.
 
-## Broadcasting `new-station`
+## Getting A New Station
 
 You can start on the last sprite you created - the one that was just a single dot in the middle of the page. All you need to do in this script is create a loop that broadcasts `new-station` every 10 seconds or so. (You can choose your own timing).
 

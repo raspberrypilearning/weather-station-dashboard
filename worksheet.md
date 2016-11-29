@@ -11,10 +11,8 @@ For Scratch to be able to talk to weather stations around the world, it needs a 
 1. Into the terminal type the following command to get the Python file.
 
 	```bash
-	 wget -O interface.py https://raw.githubusercontent.com/raspberrypilearning/scratching-the-weather/master/code/interface.py?token=AETp8m9CBcAxVOOTmuLO7X9K7cXqPRcrks5YQZB_wA%3D%3D
+	 wget -O interface.py rpf.io/wsd 
 	```
-- note get shortened URL off BEN
-
 1. That's it, you have downloaded the file. Keep the terminal open though, as you'll need it in a minute.
 
 ## Setting up Scratch
