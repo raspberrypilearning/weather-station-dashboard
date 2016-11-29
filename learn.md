@@ -1,7 +1,5 @@
-By creating a something with your Raspberry Pi you will learn:
+By making a Weather Station dashboard with your Raspberry Pi, you will learn
 
-- How to set up a Raspberry Pi camera
-- How to use GPIO pins
-- How to create a circuit on a breadboard
-- Controlling GPIO pins with Python code
-- Controlling the camera module with Python code
+- How to access an external script using remote sensors in Scratch.
+- How to fetch weather data from a specific weather station.
+- How to visualise a few weather sensor readings, using Scratch.
