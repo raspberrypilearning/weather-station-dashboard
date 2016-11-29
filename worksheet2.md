@@ -68,14 +68,53 @@ The first thing you'll want to do is to choose a weather forecaster, who will be
 
 	![](images/arrow-final.png)
 
-## A Thermometer
+## Adding a Thermometer
 
 1. Next you are going to produce a working thermometer. You'll need a graphic to represent it, and the one below should be good enough. Right click on it and download the file to your Raspberry Pi.
 
 	![](images/therm-sprite.png)
 
-1. Import this sprite into your Scratch program. You're going to use the pen tool to draw in the mercury inside the thermometer. Becuase you can't draw over the top of Sprites, you can stamp the Sprite's image to the canvas first, and then hide it. This is the only script you'll need on the termometer.
+1. Import this sprite into your Scratch program. You'll need to place this sprite in a very particular place, so it's best to add this into the script. You're also going to use the pen tool to draw the mercury inside the thermometer, but becuase you can't draw over the top of Sprites, you need to stamp the Sprite's image to the canvas first, and then hide it. This is the only script you'll need on the thermometer.
 
 	![](images/thermometer.png)
 
-1. 
+1. You'll notice the `broadcast` at the end. This is going to be used to tell the pen to start filling in the mercury inside the thermometer.
+
+## Drawing the Mercury
+
+1. Now you're going to need a new and very tiny sprite. Click on the left-most button in the `New Sprite` menu.
+
+![](images/new-sprite.png)
+
+1. All you need is a single white dot in the middle of the screen.
+
+![](images/canvas.png)
+
+1. Now you're going to get this tiny pixel to draw a red line of mercury inside the thermometer. When the pixel receives a message to draw, it needs to set up it's pen.
+
+![](images/pixel-1.png)
+
+1. How the mercury is drawn will depend on whether the temperature is higher or lower than `0`. You write the code for temperatures above `0` first.
+
+	![](images/pixel-2.png)
+	
+1. The first thing to do is to make the pen go all the way to the bottom of the thermometer, and for the pen to be place `down` on the canvas.
+
+![](images/pixel-3.png)
+
+1. Next the pen can move up to the `0` degrees mark on the thermemeter.
+
+	![](images/pixel-4.png)
+	
+1. Then depending on the temperature, the pen can move upwards in the `y` axis. You might want to tweak the values a little, but 1.7 pixels per degree seems to work fairly well.
+
+![](images/pixel-5.png)
+
+1. If the temperature is blow zero, the pen needs to move to the `-30` degree mark.
+
+![](images/pixel-6.png)
+
+1. Then the `y` needs to be changed.
+
+![](images/pixel-7.png)
+![](images/pixel-8.png)

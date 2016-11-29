@@ -17,10 +17,12 @@ change size by(([wind_speed v] sensor value) * [10])
 ** Thermometer blocks
 #+BEGIN_SRC scratch
 when flag clicked
-clear
+go to x:[-207] y:[-13]
 show
+clear
 stamp
 hide
+broadcast draw
 #+END_SRC
 
 ** Pixel blocks
@@ -32,19 +34,19 @@ wait [10] secs
 #+END_SRC
 
 #+BEGIN_SRC scratch
-when flag clicked
-clear
-hide
-set pen size to [5]
-wait [1] secs
-set pen color to [#ff0000]
+when flag clicked (when I receive [draw v])
 go to front
+pen up
+set pen size to [5]
+set pen color to [#ff0000]
 if <([ambient v] sensor value) >[0]>
 go to x: [-207] y:[-140]
+pen down
 go to x: [-207] y:[-60]
 change y by (([ambient_temp v] sensor value) * [1.7])
 else
 go to x: [-207] y:[-140]
-go to x: [-207] y:[-110]
+pen down
+go to x: [-207] y:[-116]
 change y by ([30]+(([ambient_temp v] sensor value) * [1.7]))
 #+END_SRC
