@@ -1,4 +1,4 @@
-# WeatherStation Dashboard
+# Weather Station Dashboard
 
 ![](cover.png)
 
