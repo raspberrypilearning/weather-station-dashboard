@@ -68,7 +68,7 @@ python3 interface.py
 
 Have a play around with different sensor values to see what they do, and what readings they produce. If you like, you could use `join` blocks to also get the cat to tell you more than one sensor value:
 
-	![](images/cat-extension.png)
+![](images/cat-extension.png)
 	
 ## What next?
 
