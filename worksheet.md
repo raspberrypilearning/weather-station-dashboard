@@ -60,7 +60,7 @@ python3 interface.py
 
 	![](images/menu.png)
 
-1. To start off with, you can choose `air_pressure`, and then use a `say` block so that the cat will tell you the air pressure at the Weather Station:
+1. To start off with, you can choose `air_pressure`, and then use a `say for 2 secs` block (selected from `Looks`) so that the cat will tell you the air pressure at the Weather Station:
 
 	![](images/cat-final.png)
 	

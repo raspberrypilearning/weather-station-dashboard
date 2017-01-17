@@ -16,11 +16,11 @@ The first thing you'll want to do is to choose a weather forecaster, who will be
 
 ## Your forecaster script
 
-1. You can start off by making your weather forecaster set the `id` of the Weather Station you'll be using:
+1. You can start off by making your weather forecaster set the `id` of the Weather Station you'll be using, by creating a new variable.
 
 	![](images/set-id.png)
 
-1. She'll then need to say a little bit about the location of the weather forecast. Use a `join` block within a `say` block to begin with, just like you did in [worksheet one](worksheet.md):
+1. She'll then need to say a little bit about the location of the weather forecast. Use a `join` block (from `Operators`) within a `say` block to begin with, just like you did in [worksheet one](worksheet.md):
 
 	![](images/forecaster-1.png)
 
@@ -58,7 +58,7 @@ The first thing you'll want to do is to choose a weather forecaster, who will be
 
 	![](images/arrow-2.png)
 
-1. To visualise the wind speed, you can change the size of the arrow. Find the `change size by __` block and add this to your script:
+1. To visualise the wind speed, you can change the size of the arrow. Find the `change size by __` block  (in `Looks`) and add this to your script:
 
 	![](images/arrow-3.png)
 
@@ -88,7 +88,7 @@ You'll notice the `broadcast` at the end. This is going to be used to tell the p
 
 	![](images/new-sprite.png)
 
-1. All you need is a single white dot in the middle of the screen:
+1. All you need is a single white dot in the middle of the screen. Draw a white dot and then click ok.
 
 	![](images/canvas.png)
 
