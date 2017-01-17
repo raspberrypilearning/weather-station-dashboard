@@ -52,7 +52,7 @@ python3 interface.py
 
 	![](images/variable.png)
 
-1. Once you've created the variable, you can set it to your Weather Station's id, or alternatively use `490722`:
+1. Once you've created the variable, you can set it to your Weather Station's id. You can find a [list of weather station ids here](stations.txt)
 
 	![](images/cat-2.png)
 
@@ -63,7 +63,9 @@ python3 interface.py
 1. To start off with, you can choose `air_pressure`, and then use a `say for 2 secs` block (selected from `Looks`) so that the cat will tell you the air pressure at the Weather Station:
 
 	![](images/cat-final.png)
-	
+
+1. If nothing happens, go back to the terminal and check the output of the `interfaces.py` script. It might be displaying the message `Station data not found. Please choose another ID`. If this is the case, then choose another id from the [list of stations](stations.txt).
+
 ## Playing around with the sensors
 
 Have a play around with different sensor values to see what they do, and what readings they produce. If you like, you could use `join` blocks to also get the cat to tell you more than one sensor value:
