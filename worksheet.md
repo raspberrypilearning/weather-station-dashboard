@@ -42,7 +42,7 @@ python3 interface.py
 
 ## Getting data from a Weather Station
 
-1. If you have your own Weather Station at your school, ask your teacher for the Weather Station's `id`. If you don't have one, then you can use the `id` in the code below.
+1. If you have your own Weather Station at your school, ask your teacher for the Weather Station's ID. If you don't have one, then you can use the ID in the code below.
 
 1. The first step is simple. You can make the Scratch cat tell you the weather for any particular Weather Station you like. First, grab a `when green flag clicked` block:
 
@@ -52,11 +52,11 @@ python3 interface.py
 
 	![](images/variable.png)
 
-1. Once you've created the variable, you can set it to your Weather Station's id. You can find a [list of weather station ids here](stations.txt)
+1. Once you've created the variable, you can set it to your Weather Station's ID. You can find a [list of Weather Station IDs here](stations.txt).
 
 	![](images/cat-2.png)
 
-1. Now if you go back to the `Sensing` menu in Scratch, and find the `slider sensor value` block, you should see there's a little black arrow that points downwards, next to the word `slider`. Click this menu and you can change the sensor value to lots of different things:
+1. Now if you go back to the `Sensing` menu in Scratch and find the `slider sensor value` block, you should see there's a little black arrow that points downwards, next to the word `slider`. Click this menu and you can change the sensor value to lots of different things:
 
 	![](images/menu.png)
 
@@ -64,7 +64,7 @@ python3 interface.py
 
 	![](images/cat-final.png)
 
-1. If nothing happens, go back to the terminal and check the output of the `interfaces.py` script. It might be displaying the message `Station data not found. Please choose another ID`. If this is the case, then choose another id from the [list of stations](stations.txt).
+1. If nothing happens, go back to the terminal and check the output of the `interfaces.py` script. It might be displaying the message `Station data not found. Please choose another ID`. If this is the case, then choose another ID from the [list of stations](stations.txt).
 
 ## Playing around with the sensors
 
