@@ -16,11 +16,11 @@ The first thing you'll want to do is to choose a weather forecaster, who will be
 
 ## Your forecaster script
 
-1. You can start off by making your weather forecaster set the `id` of the Weather Station you'll be using, by creating a new variable.
+1. You can start off by making your weather forecaster set the ID of the Weather Station you'll be using, by creating a new variable.
 
 	![](images/set-id.png)
 
-1. She'll then need to say a little bit about the location of the weather forecast. Use a `join` block (from `Operators`) within a `say` block to begin with, just like you did in [worksheet one](worksheet.md):
+1. She'll then need to say a little bit about the location of the weather forecast. Use a `join` block (from `Operators`) within a `say` block to begin with, just like you did in [the first worksheet](worksheet.md):
 
 	![](images/forecaster-1.png)
 
@@ -40,7 +40,7 @@ The first thing you'll want to do is to choose a weather forecaster, who will be
 
 ## A weathervane
 
-1. Next, you can make a weathervane. Weathervanes show the direction of the wind, but yours is also going to visualise the speed of the wind.
+Next, you can make a weathervane. Weathervanes show the direction of the wind, but yours is also going to visualise the speed of the wind.
 
 1. Click on the `New Sprite` button to choose another sprite:
 
@@ -76,7 +76,7 @@ The first thing you'll want to do is to choose a weather forecaster, who will be
 
 	![](images/therm-sprite-small.png)
 
-1. Import this sprite into your Scratch program. You'll need to place this sprite in a very particular place, so it's best to add this into the script. You're also going to use the pen tool to draw the mercury inside the thermometer, but because you can't draw over the top of Sprites, you need to stamp the Sprite's image to the canvas first, and then hide it. This is the only script you'll need on the thermometer:
+1. Import this sprite into your Scratch program. You'll need to place this sprite in a very particular place, so it's best to add this into the script. You're also going to use the pen tool to draw the mercury inside the thermometer, but because you can't draw over the top of sprites, you need to stamp the sprite's image to the canvas first, and then hide it. This is the only script you'll need on the thermometer:
 
 	![](images/thermometer.png)
 
@@ -88,7 +88,7 @@ You'll notice the `broadcast` at the end. This is going to be used to tell the p
 
 	![](images/new-sprite.png)
 
-1. All you need is a single white dot in the middle of the screen. Draw a white dot and then click ok.
+1. All you need is a single white dot in the middle of the screen. Draw a white dot and then click OK.
 
 	![](images/canvas.png)
 
@@ -125,4 +125,5 @@ You'll notice the `broadcast` at the end. This is going to be used to tell the p
 	![](images/pixel-8.png)
 
 ## What next?
+
 In [worksheet three](worksheet3.md) you'll learn how to fetch the weather from more than one Weather Station, giving you a global weather dashboard.
