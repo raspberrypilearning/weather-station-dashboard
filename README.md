@@ -1,5 +1,7 @@
 # Weather Station Dashboard
 
+**This is an archived resource.** The repo will remain available but the resource will no longer be maintained or updated. Some or all parts of the resource may no longer work. To see our latest resources, please visit [raspberrypi.org](http://www.raspberrypi.org). 
+
 ![](cover.png)
 
 In this resource you will use the provided Python script to connect Weather Stations all around the world to your Scratch project, and then visualise some of their sensor data.
